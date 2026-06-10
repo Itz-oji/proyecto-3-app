@@ -1,0 +1,15 @@
+<api>
+  <jcw-types>
+    <type name="MainActivity" package="crc644e679c808261afa4" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiAppCompatActivity" partial_assembly_qualified_name="CuandoPagan.MainActivity, CuandoPagan">
+      <constructors>
+        <constructor name="MainActivity" method="n_.ctor:()V:" jni_signature="()V" managed_parameters="" retval="void" is_dynamically_registered="True" />
+        <constructor name="MainActivity" method="n_.ctor:(I)V:" jni_signature="(I)V" managed_parameters="System.Int32, System.Private.CoreLib" params="int p0" retval="void" is_dynamically_registered="True" super_call="p0" activate_call="p0" />
+      </constructors>
+    </type>
+    <type name="MainApplication" package="crc644e679c808261afa4" application_java_class="android.app.Application" mono_runtime_initialization="mono.MonoPackageManager.LoadApplication (context);" extends_type="crc6488302ad6e9e4df1a.MauiApplication" is_application="True" partial_assembly_qualified_name="CuandoPagan.MainApplication, CuandoPagan" application_constructor="MainApplication" />
+  </jcw-types>
+  <acw-types partial-assembly-name="CuandoPagan" module-name="CuandoPagan.dll">
+    <type assembly-qualified-name="CuandoPagan.MainActivity, CuandoPagan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="cuandopagan.MainActivity" java-key="crc644e679c808261afa4.MainActivity" managed-key="CuandoPagan.MainActivity" partial-assembly-qualified-name="CuandoPagan.MainActivity, CuandoPagan" />
+    <type assembly-qualified-name="CuandoPagan.MainApplication, CuandoPagan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" compat-jni-name="cuandopagan.MainApplication" java-key="crc644e679c808261afa4.MainApplication" managed-key="CuandoPagan.MainApplication" partial-assembly-qualified-name="CuandoPagan.MainApplication, CuandoPagan" />
+  </acw-types>
+</api>

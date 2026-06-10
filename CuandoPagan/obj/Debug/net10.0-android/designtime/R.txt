@@ -3782,10 +3782,10 @@ int layout select_dialog_multichoice_material 0x7f0b006e
 int layout select_dialog_singlechoice_material 0x7f0b006f
 int layout shellcontent 0x7f0b0070
 int layout support_simple_spinner_dropdown_item 0x7f0b0071
-int mipmap appicon 0x7f0c0000
-int mipmap appicon_background 0x7f0c0001
-int mipmap appicon_foreground 0x7f0c0002
-int mipmap appicon_round 0x7f0c0003
+int mipmap luffy 0x7f0c0000
+int mipmap luffy_background 0x7f0c0001
+int mipmap luffy_foreground 0x7f0c0002
+int mipmap luffy_round 0x7f0c0003
 int plurals mtrl_badge_content_description 0x7f0d0000
 int string abc_action_bar_home_description 0x7f0e0000
 int string abc_action_bar_up_description 0x7f0e0001

@@ -504,7 +504,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -3072,7 +3072,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -5640,7 +5640,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -8208,7 +8208,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -10776,7 +10776,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -13344,7 +13344,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -15883,7 +15883,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -16422,7 +16422,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -16961,7 +16961,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -17500,7 +17500,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -18039,7 +18039,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -18578,7 +18578,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -19117,7 +19117,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -19754,7 +19754,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -20300,7 +20300,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -20846,7 +20846,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -21389,7 +21389,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -21935,7 +21935,7 @@
           "buildTransitive/Microsoft.Maui.Resizetizer.targets": {}
         }
       },
-      "Microsoft.NET.ILLink.Tasks/10.0.6": {
+      "Microsoft.NET.ILLink.Tasks/10.0.5": {
         "type": "package",
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
@@ -27803,10 +27803,10 @@
         "microsoft.maui.resizetizer.nuspec"
       ]
     },
-    "Microsoft.NET.ILLink.Tasks/10.0.6": {
-      "sha512": "QKuvS0LWX4fjFqeDkyM7Kqt8P3wYTiPD4nwU+9y59n0sCiG714fxDgbbN82vDnzq89AF/PiHl92TP2C4aFDUQA==",
+    "Microsoft.NET.ILLink.Tasks/10.0.5": {
+      "sha512": "A+5ZuQ0f449tM+MQrhf6R9ZX7lYpjk/ODEwLYKrnF6111rtARx8fVsm4YznUnQiKnnXfaXNBqgxmil6RW3L3SA==",
       "type": "package",
-      "path": "microsoft.net.illink.tasks/10.0.6",
+      "path": "microsoft.net.illink.tasks/10.0.5",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -27819,7 +27819,7 @@
         "build/Microsoft.NET.ILLink.Analyzers.props",
         "build/Microsoft.NET.ILLink.Tasks.props",
         "build/Microsoft.NET.ILLink.targets",
-        "microsoft.net.illink.tasks.10.0.6.nupkg.sha512",
+        "microsoft.net.illink.tasks.10.0.5.nupkg.sha512",
         "microsoft.net.illink.tasks.nuspec",
         "tools/net/ILLink.Tasks.deps.json",
         "tools/net/ILLink.Tasks.dll",
@@ -31258,7 +31258,7 @@
       "CommunityToolkit.Mvvm >= 8.4.2",
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
       "Microsoft.Maui.Controls >= 10.0.20",
-      "Microsoft.NET.ILLink.Tasks >= 10.0.6",
+      "Microsoft.NET.ILLink.Tasks >= 10.0.5",
       "SQLitePCLRaw.bundle_green >= 2.1.11",
       "sqlite-net-pcl >= 1.9.172"
     ],
@@ -31266,7 +31266,7 @@
       "CommunityToolkit.Mvvm >= 8.4.2",
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
       "Microsoft.Maui.Controls >= 10.0.20",
-      "Microsoft.NET.ILLink.Tasks >= 10.0.6",
+      "Microsoft.NET.ILLink.Tasks >= 10.0.5",
       "SQLitePCLRaw.bundle_green >= 2.1.11",
       "sqlite-net-pcl >= 1.9.172"
     ],
@@ -31274,7 +31274,7 @@
       "CommunityToolkit.Mvvm >= 8.4.2",
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
       "Microsoft.Maui.Controls >= 10.0.20",
-      "Microsoft.NET.ILLink.Tasks >= 10.0.6",
+      "Microsoft.NET.ILLink.Tasks >= 10.0.5",
       "SQLitePCLRaw.bundle_green >= 2.1.11",
       "sqlite-net-pcl >= 1.9.172"
     ],
@@ -31287,20 +31287,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\benja\\.nuget\\packages\\": {}
+    "C:\\Users\\admbs2\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\benja\\OneDrive\\Documentos\\2026-1\\AplicacionesMobiles\\proyecto-3-app\\CuandoPagan\\CuandoPagan.csproj",
+      "projectUniqueName": "C:\\Users\\admbs2\\Documents\\2026-1\\AppMobiles\\proyecto-3-app\\CuandoPagan\\CuandoPagan.csproj",
       "projectName": "CuandoPagan",
-      "projectPath": "C:\\Users\\benja\\OneDrive\\Documentos\\2026-1\\AplicacionesMobiles\\proyecto-3-app\\CuandoPagan\\CuandoPagan.csproj",
-      "packagesPath": "C:\\Users\\benja\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\benja\\OneDrive\\Documentos\\2026-1\\AplicacionesMobiles\\proyecto-3-app\\CuandoPagan\\obj\\",
+      "projectPath": "C:\\Users\\admbs2\\Documents\\2026-1\\AppMobiles\\proyecto-3-app\\CuandoPagan\\CuandoPagan.csproj",
+      "packagesPath": "C:\\Users\\admbs2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\admbs2\\Documents\\2026-1\\AppMobiles\\proyecto-3-app\\CuandoPagan\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
-        "C:\\Users\\benja\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\admbs2\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0-android",
@@ -31361,7 +31361,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[10.0.6, )",
+            "version": "[10.0.5, )",
             "autoReferenced": true
           },
           "SQLitePCLRaw.bundle_green": {
@@ -31387,7 +31387,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[10.0.7, 10.0.7]"
+            "version": "[10.0.6, 10.0.6]"
           }
         ],
         "frameworkReferences": {
@@ -31401,7 +31401,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -31695,7 +31695,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[10.0.6, )",
+            "version": "[10.0.5, )",
             "autoReferenced": true
           },
           "SQLitePCLRaw.bundle_green": {
@@ -31721,7 +31721,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[10.0.7, 10.0.7]"
+            "version": "[10.0.6, 10.0.6]"
           }
         ],
         "frameworkReferences": {
@@ -31735,7 +31735,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -32029,7 +32029,7 @@
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[10.0.6, )",
+            "version": "[10.0.5, )",
             "autoReferenced": true
           },
           "SQLitePCLRaw.bundle_green": {
@@ -32056,7 +32056,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[10.0.7, 10.0.7]"
+            "version": "[10.0.6, 10.0.6]"
           }
         ],
         "frameworkReferences": {
@@ -32070,7 +32070,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -32395,7 +32395,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
