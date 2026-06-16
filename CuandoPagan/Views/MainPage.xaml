@@ -1,19 +1,32 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage 
+<ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:CuandoPagan.ViewModels"
     x:Class="CuandoPagan.Views.MainPage">
 
-    <VerticalStackLayout
-        Padding="30"
-        Spacing="20"
-        VerticalOptions="Center">
+    <ContentPage.BindingContext>
+        <viewmodels:MainViewModel />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
 
         <Label
-            Text="Cuando Pagan"
-            FontSize="32"
+            Text="Hola, indícanos tu nombre"
+            FontSize="26"
+            HorizontalOptions="Center" />
+
+        <Entry
+            Placeholder="Escribe tu nombre"
+            Text="{Binding Nombre}" />
+
+        <Button
+            Text="Guardar"
+            Command="{Binding GuardarNombreCommand}" />
+
+        <Label
+            Text="{Binding Mensaje}"
+            FontSize="16"
             HorizontalOptions="Center" />
 
     </VerticalStackLayout>
-
 </ContentPage>

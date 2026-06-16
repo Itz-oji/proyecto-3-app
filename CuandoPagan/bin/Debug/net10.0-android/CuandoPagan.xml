@@ -4,11 +4,51 @@
         <name>CuandoPagan</name>
     </assembly>
     <members>
+        <member name="T:CuandoPagan.ViewModels.MainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:CuandoPagan.ViewModels.MainViewModel.Nombre">
+            <inheritdoc cref="F:CuandoPagan.ViewModels.MainViewModel.nombre"/>
+        </member>
+        <member name="P:CuandoPagan.ViewModels.MainViewModel.Mensaje">
+            <inheritdoc cref="F:CuandoPagan.ViewModels.MainViewModel.mensaje"/>
+        </member>
+        <member name="F:CuandoPagan.ViewModels.MainViewModel.guardarNombreCommand">
+            <summary>The backing field for <see cref="P:CuandoPagan.ViewModels.MainViewModel.GuardarNombreCommand"/>.</summary>
+        </member>
+        <member name="P:CuandoPagan.ViewModels.MainViewModel.GuardarNombreCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:CuandoPagan.ViewModels.MainViewModel.GuardarNombre"/>.</summary>
+        </member>
         <member name="T:CuandoPagan.Resource">
             <summary>
             Android Resource Designer class.
             Exposes the Android Resource designer assembly into the project Namespace.
             </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Nombre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Nombre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Mensaje">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Mensaje" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Nombre">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Nombre" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Mensaje">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Mensaje" generated properties.</summary>
         </member>
     </members>
 </doc>

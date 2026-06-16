@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CuandoPagan")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+fe814be5fba10d7445d3aaf91cc07be834ec06e3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+176f6cbd01574fadbba3304cad31a21eab323013")]
 [assembly: System.Reflection.AssemblyProductAttribute("CuandoPagan")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CuandoPagan")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
