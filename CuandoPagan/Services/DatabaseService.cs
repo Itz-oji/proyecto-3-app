@@ -16,6 +16,15 @@ public class DatabaseService
     {
         await _database.InsertAsync(usuario);
     }
+    public Task<List<Usuario>> ObtenerUsuariosAsync()
+    {
+        return _database.Table<Usuario>().ToListAsync();
+    }
+    public async Task<Usuario?> ObtenerPrimerUsuarioAsync()
+    {
+        var usuarios = await _database.Table<Usuario>().ToListAsync();
+        return usuarios.FirstOrDefault();
+    }
     public async Task<Usuario?> ObtenerUsuarioAsync()
     {
         return await _database.Table<Usuario>().FirstOrDefaultAsync();

@@ -2,6 +2,8 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using CuandoPagan.Models;
 using CuandoPagan.Services;
+using CuandoPagan.Views;
+using System.Collections.ObjectModel;
 
 namespace CuandoPagan.ViewModels;
 
@@ -14,6 +16,12 @@ public partial class MainViewModel : ObservableObject
 
     [ObservableProperty]
     private string mensaje = string.Empty;
+
+    [ObservableProperty]
+    private ObservableCollection<Usuario> usuarios = new();
+
+    [ObservableProperty]
+    private Usuario? usuarioSeleccionado;
 
     public MainViewModel()
     {
@@ -36,6 +44,24 @@ public partial class MainViewModel : ObservableObject
 
         await _databaseService.GuardarUsuarioAsync(usuario);
 
-        Mensaje = $"Hola {Nombre}, tu nombre fue guardado";
+        await Shell.Current.GoToAsync(nameof(HomePage), new Dictionary<string, object>
+        {
+            { "nombre", Nombre }
+        });
+    }
+
+    [RelayCommand]
+    private async Task CargarUsuarios()
+    {
+        var lista = await _databaseService.ObtenerUsuariosAsync();
+
+        Usuarios.Clear();
+
+        foreach (var usuario in lista)
+        {
+            Usuarios.Add(usuario);
+        }
+
+        Mensaje = $"Usuarios cargados: {Usuarios.Count}";
     }
 }

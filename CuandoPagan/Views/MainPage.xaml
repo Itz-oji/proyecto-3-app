@@ -4,9 +4,6 @@
     xmlns:viewmodels="clr-namespace:CuandoPagan.ViewModels"
     x:Class="CuandoPagan.Views.MainPage">
 
-    <ContentPage.BindingContext>
-        <viewmodels:MainViewModel />
-    </ContentPage.BindingContext>
 
     <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
 
@@ -22,6 +19,16 @@
         <Button
             Text="Guardar"
             Command="{Binding GuardarNombreCommand}" />
+
+        <Button
+            Text="Cargar nombres guardados"
+            Command="{Binding CargarUsuariosCommand}" />
+
+        <Picker
+            Title="Selecciona un nombre guardado"
+            ItemsSource="{Binding Usuarios}"
+            ItemDisplayBinding="{Binding Nombre}"
+            SelectedItem="{Binding UsuarioSeleccionado}" />
 
         <Label
             Text="{Binding Mensaje}"
