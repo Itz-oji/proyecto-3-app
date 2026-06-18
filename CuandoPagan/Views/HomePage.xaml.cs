@@ -1,4 +1,4 @@
-using CommunityToolkit.Mvvm.ComponentModel;
+using CuandoPagan.ViewModels;
 
 namespace CuandoPagan.Views;
 
@@ -9,15 +9,25 @@ public partial class HomePage : ContentPage
     {
         set
         {
-            BindingContext = new
+            if (BindingContext is HomeViewModel vm)
             {
-                Nombre = value
-            };
+                vm.Nombre = value;
+            }
         }
     }
 
     public HomePage()
     {
         InitializeComponent();
+        BindingContext = new HomeViewModel();
+    }
+
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
+        if (BindingContext is HomeViewModel vm)
+        {
+            await vm.CargarDatosCommand.ExecuteAsync(null);
+        }
     }
 }

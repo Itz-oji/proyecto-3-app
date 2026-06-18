@@ -1,21 +1,98 @@
 <ContentPage
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:CuandoPagan.ViewModels"
+    xmlns:models="clr-namespace:CuandoPagan.Models"
     x:Class="CuandoPagan.Views.HomePage"
-    Title="Principal">
+    x:DataType="viewmodels:HomeViewModel"
+    Title="Dashboard"
+    Shell.NavBarIsVisible="False"
+    BackgroundColor="#FFFFFF">
 
-    <VerticalStackLayout Padding="30" Spacing="20">
+    <Grid RowDefinitions="180, *">
+        
+        <!-- ROW 0: PURPLE HEADER SECTION WITH BOTTOM CORNER CURVE -->
+        <Border Grid.Row="0" StrokeShape="RoundRectangle 0,0,28,28" StrokeThickness="0" BackgroundColor="#2D154E">
+            <VerticalStackLayout Padding="25, 45, 25, 0" Spacing="2" VerticalOptions="Start">
+                <Label Text="Hola," FontSize="15" TextColor="#D1C4E9" />
+                <Label Text="{Binding Nombre}" FontSize="28" FontAttributes="Bold" TextColor="White" />
+            </VerticalStackLayout>
+        </Border>
 
-        <Label
-            Text="{Binding Nombre}"
-            FontSize="36"
-            FontAttributes="Bold"
-            HorizontalOptions="Center" />
+        <!-- ROW 1: CONTENT SECTION -->
+        <Grid Grid.Row="1" RowDefinitions="125, *">
+            
+            <!-- OVERLAPPING WHITE BALANCE CARD -->
+            <Grid Grid.Row="0" VerticalOptions="Start" HeightRequest="150">
+                
+                <!-- White Card -->
+                <Border StrokeShape="RoundRectangle 16" StrokeThickness="0" BackgroundColor="White" Padding="22" Margin="20,-70,20,0" VerticalOptions="Fill">
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Offset="0,4" Radius="10" Opacity="0.12" />
+                    </Border.Shadow>
+                    
+                    <Grid RowDefinitions="Auto, Auto, *">
+                        <Label Grid.Row="0" Text="Balance" TextColor="#95A5A6" FontSize="14" />
+                        <Label Grid.Row="1" Text="{Binding Balance, StringFormat='${0:N2}'}" TextColor="#2C3E50" FontSize="28" FontAttributes="Bold" />
+                        
+                        <Grid Grid.Row="2" ColumnDefinitions="*, *" Margin="0,15,0,0">
+                            <!-- Incomes -->
+                            <VerticalStackLayout Grid.Column="0" Spacing="2">
+                                <Label Text="Ingresos" TextColor="#95A5A6" FontSize="13" />
+                                <Label Text="{Binding TotalIngresos, StringFormat='${0:N2}'}" TextColor="#2C3E50" FontSize="17" FontAttributes="Bold" />
+                            </VerticalStackLayout>
+                            <!-- Expenses -->
+                            <VerticalStackLayout Grid.Column="1" Spacing="2">
+                                <Label Text="Egresos" TextColor="#95A5A6" FontSize="13" />
+                                <Label Text="{Binding TotalGastos, StringFormat='${0:N2}'}" TextColor="#2C3E50" FontSize="17" FontAttributes="Bold" />
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Grid>
+                </Border>
+                
+                <!-- Floating Action Button '+' (Opens AddTransactionPage) -->
+                <Button Text="+" FontSize="26" FontAttributes="Bold" HeightRequest="54" WidthRequest="54" CornerRadius="27" 
+                        HorizontalOptions="End" VerticalOptions="End" Margin="0,0,35,0" TranslationY="27"
+                        BackgroundColor="#2D154E" TextColor="White"
+                        Command="{Binding IrAAgregarTransaccionCommand}">
+                    <Button.Shadow>
+                        <Shadow Brush="Black" Offset="0,3" Radius="6" Opacity="0.25" />
+                    </Button.Shadow>
+                </Button>
+            </Grid>
 
-        <Label
-            Text="Bienvenido a CuandoPagan"
-            FontSize="20"
-            HorizontalOptions="Center" />
-
-    </VerticalStackLayout>
+            <!-- TRANSACTION LIST -->
+            <Grid Grid.Row="1" RowDefinitions="Auto, *" RowSpacing="5" Margin="0,15,0,0">
+                <Label Grid.Row="0" Text="Transacciones" FontAttributes="Bold" FontSize="15" TextColor="#7F8C8D" Margin="25,10,25,5" />
+                
+                <CollectionView Grid.Row="1" ItemsSource="{Binding Transacciones}" SelectionMode="None" Margin="25,0,25,0">
+                    <CollectionView.EmptyView>
+                        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="30" Spacing="10">
+                            <Label Text="💵" FontSize="44" HorizontalOptions="Center" />
+                            <Label Text="No hay transacciones registradas." TextColor="#7F8C8D" FontSize="14" HorizontalOptions="Center" />
+                        </VerticalStackLayout>
+                    </CollectionView.EmptyView>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Transaction">
+                            <Grid ColumnDefinitions="*, Auto, Auto" ColumnSpacing="10" Padding="0, 12, 0, 12">
+                                <!-- Transaction Details (Description & Date) -->
+                                <VerticalStackLayout Grid.Column="0" Spacing="2" VerticalOptions="Center">
+                                    <Label Text="{Binding Description}" FontSize="16" FontAttributes="Bold" TextColor="#000000" LineBreakMode="TailTruncation" />
+                                    <Label Text="{Binding Date, StringFormat='{0:dd-MM-yyyy}'}" FontSize="12" TextColor="#95A5A6" />
+                                </VerticalStackLayout>
+                                
+                                <!-- Amount with Sign & Dynamic Color -->
+                                <Label Grid.Column="1" Text="{Binding DisplayAmount}" TextColor="{Binding DisplayColor}" FontSize="16" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="End" />
+                                
+                                <!-- Delete Button -->
+                                <Button Grid.Column="2" Text="🗑️" FontSize="14" HeightRequest="32" WidthRequest="32" Padding="0" BackgroundColor="Transparent" TextColor="#BDC3C7" VerticalOptions="Center" CornerRadius="16"
+                                        Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:HomeViewModel}}, Path=EliminarTransaccionCommand}"
+                                        CommandParameter="{Binding .}" />
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </Grid>
+    </Grid>
 </ContentPage>

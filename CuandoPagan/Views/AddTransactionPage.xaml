@@ -1,0 +1,70 @@
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:CuandoPagan.ViewModels"
+    x:Class="CuandoPagan.Views.AddTransactionPage"
+    x:DataType="viewmodels:AddTransactionViewModel"
+    Title="Nueva Transacción"
+    Shell.NavBarIsVisible="False"
+    BackgroundColor="#FFFFFF">
+
+    <Grid RowDefinitions="180, *">
+        
+        <!-- ROW 0: PURPLE HEADER SECTION WITH BOTTOM CORNER CURVE -->
+        <Border Grid.Row="0" StrokeShape="RoundRectangle 0,0,28,28" StrokeThickness="0" BackgroundColor="#2D154E">
+            <VerticalStackLayout Padding="25, 50, 25, 0" VerticalOptions="Start">
+                <Label Text="Nueva transacción" FontSize="28" FontAttributes="Bold" TextColor="White" />
+            </VerticalStackLayout>
+        </Border>
+
+        <!-- ROW 1: CONTENT SECTION -->
+        <Grid Grid.Row="1" RowDefinitions="Auto, *">
+            
+            <!-- OVERLAPPING WHITE INPUT CARD -->
+            <Border Grid.Row="0" StrokeShape="RoundRectangle 16" StrokeThickness="0" BackgroundColor="White" Padding="25" Margin="20,-70,20,20" VerticalOptions="Start">
+                <Border.Shadow>
+                    <Shadow Brush="Black" Offset="0,4" Radius="10" Opacity="0.12" />
+                </Border.Shadow>
+                
+                <VerticalStackLayout Spacing="15">
+                    
+                    <!-- Glosa -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Glosa" TextColor="#95A5A6" FontSize="14" />
+                        <Border StrokeShape="RoundRectangle 10" StrokeThickness="1" Stroke="#8C7AE6" Padding="12,2" BackgroundColor="White">
+                            <Entry Text="{Binding Descripcion}" BackgroundColor="Transparent" TextColor="Black" HeightRequest="44" />
+                        </Border>
+                    </VerticalStackLayout>
+
+                    <!-- Cantidad -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Cantidad" TextColor="#95A5A6" FontSize="14" />
+                        <Border StrokeShape="RoundRectangle 10" StrokeThickness="1" Stroke="#8C7AE6" Padding="12,2" BackgroundColor="White">
+                            <Entry Text="{Binding MontoText}" Keyboard="Numeric" Placeholder="0" BackgroundColor="Transparent" TextColor="Black" HeightRequest="44" />
+                        </Border>
+                    </VerticalStackLayout>
+
+                    <!-- Fecha -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Fecha" TextColor="#95A5A6" FontSize="14" />
+                        <Border StrokeShape="RoundRectangle 10" StrokeThickness="1" Stroke="#8C7AE6" Padding="12,2" BackgroundColor="White">
+                            <DatePicker Date="{Binding Fecha}" Format="d/M/yyyy" BackgroundColor="Transparent" TextColor="Black" HeightRequest="44" />
+                        </Border>
+                    </VerticalStackLayout>
+                    
+                    <!-- Checkbox -->
+                    <HorizontalStackLayout Spacing="8" Margin="0,5,0,0">
+                        <CheckBox IsChecked="{Binding EsIngreso}" Color="#8C7AE6" VerticalOptions="Center" />
+                        <Label Text="¿Es ingreso?" TextColor="#7F8C8D" FontSize="15" VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+
+                    <!-- Buttons -->
+                    <Grid ColumnDefinitions="Auto, Auto" ColumnSpacing="12" Margin="0,10,0,0">
+                        <Button Grid.Column="0" Text="Guardar" Command="{Binding GuardarCommand}" BackgroundColor="#3F32A3" TextColor="White" WidthRequest="115" CornerRadius="8" FontAttributes="Bold" HeightRequest="44" />
+                        <Button Grid.Column="1" Text="Cancelar" Command="{Binding CancelarCommand}" BackgroundColor="#800000" TextColor="White" WidthRequest="115" CornerRadius="8" FontAttributes="Bold" HeightRequest="44" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+        </Grid>
+    </Grid>
+</ContentPage>
